@@ -1,0 +1,203 @@
+body {
+    background-color: rgb(24, 25, 30);
+    ;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+}
+
+.buttons {
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
+.googlebtn {
+    background-color: #1A73E8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.googlebtn:hover {
+    opacity: 0.6;
+}
+
+.googlebtn picture {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googlebtn picture img {
+    width: 78%;
+}
+
+.googlebtn span {
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.twitterbtn {
+    color: #bbb;
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.twitterbtn:hover {
+    background-color: #ddd;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+.section-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #f2f2f2;
+}
+
+label span {
+    font-weight: 700;
+}
+
+label:hover {
+    color: rgb(213, 164, 96);
+}
+
+.section-inputs label input {
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+label input {
+    width: 90%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover {
+    background-color: white;
+    border: solid #f3f3f4;
+    box-shadow: 0 0 4px rgb(213, 164, 96);
+}
+
+label input:focus {
+    background-color: white;
+    border: solid #f3f3f4;
+    box-shadow: 0 0 4px rgb(213, 164, 96);
+}
+
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+.checkbox-label span {
+    font-weight: 400;
+}
+
+.submit-btn {
+    background-color: rgb(213, 164, 96);
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: rgb(213, 164, 96)
+}
+
+button a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+/* Media query para pantallas medianas (desde 576px hasta 991px de ancho) */
+@media (min-width: 576px) and (max-width: 991px) {
+    .buttons button {
+        margin-right: 0.5rem;
+    }
+}
+
+/* Media query para pantallas grandes (a partir de 992px de ancho) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px; /* Ajusta el ancho máximo del contenedor principal */
+    }
+    .buttons {
+        justify-content: center; /* Centra los botones horizontalmente */
+    }
+    .section-inputs .col-md-6 {
+        width: 50%; /* Hace que los campos de nombre y usuario ocupen la mitad del ancho del contenedor */
+    }
+    .submit-btn a {
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente del enlace de crear cuenta */
+    }
+}

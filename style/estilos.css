@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Open+Sans:wght@500&display=swap");
+
+/* este es todo el estilo de mi index*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(24, 25, 30);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 5px;
+}
+
+nav a {
+  color: #f7ecec;
+  text-decoration: none;
+}
+
+.logo {
+  text-align: center;
+  flex: 1;
+}
+
+.search {
+  flex: 1;
+  text-align: right;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: solid;
+  border-radius: 25px;
+  width: 40%;
+  margin-bottom: 20px;
+  background-color: #eee;
+  color: #333;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.text {
+  margin-right: 35px;
+}
+.text h2 {
+  flex: 2;
+  font-size: 24px;
+  line-height: 1;
+  color: rgb(213, 164, 96);
+}
+
+.text p {
+  font-size: 13px;
+  color: rgb(248, 237, 237);
+}
+
+.image {
+  display: flex;
+  width: 277px;
+  height: 262px;
+}
+.image img {
+  border-radius: 85px;
+  margin-left: 75px; /* agregamos la propiedad border-radius solo a la imagen */
+}
+
+.image:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(213, 164, 96);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(61, 60, 60);
+}
+
+/* footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 1px;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: #666;
+  text-decoration: none;
+  margin: 5px;
+}
+
+
+/* aqui empiza el estilo de la pagina de categorias*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3px;
+  gap: 25px;
+  color: #f2f2f2;
+}
+
+.image-item:hover {
+  color: rgb(213, 164, 96);
+}
+
+.image-container img {
+  width: 100%;
+  height: 300px;
+  height: 300px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.image-container img:hover {
+  cursor: pointer;
+  width: 350px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.image-container .image-description {
+  width: 60%;
+  font-size: 12px;
+  margin: -24px auto auto 10px ;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* pagina de contacto*/
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+.lista {
+  font-family: "Open Sans", sans-serif;
+  flex: 1;
+  padding-right: 20px;
+  color: rgb(213, 164, 96);
+}
+
+.mapa {
+  flex: 1;
+  height: 400px;
+
+}
+.custom-container {
+  background-color: rgb(24, 25, 30);
+  min-height: 100vh;
+}
+.custom-container .col-md-6 > div {
+  transform: translateY(40px); 
+}
+
+/* aqui empieza los estilos de la pagina de commo trabajamos*/
+
+.proceso-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 30px auto 0 -190px;
+  padding: 20px;
+  gap: 180px;
+  color: #f2f2f2;
+  white-space: nowrap;
+}
+
+.proceso-item h2 {
+  background-color: #666;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.proceso-item p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.proceso-item:hover {
+  color: rgb(213, 164, 96);
+  transform: translateY(-50px);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+/* estilos de pagina de clientes*/
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-bottom: 132px;
+  color: #f2f2f2;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  flex: 1;
+  margin: 5px;
+  
+}
+ button a {
+  text-decoration: none; 
+  color: #f2f2f2; 
+}
+
+
+
+
+
+@media (max-width: 575px) {
+  .container-fluid.custom-container {
+    padding: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .mapa {
+    height: 200px;
+  }
+}
+
+/* Estilos para pantallas medianas (desde 576px hasta 991px) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* Estilos para pantallas grandes (a partir de 992px) */
+@media (min-width: 992px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }}
